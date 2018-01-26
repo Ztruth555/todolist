@@ -28,7 +28,6 @@ gulp.task('app', done => {
         .on('data', end(done, DEBUG))
 })
 
-
 gulp.task('assets', () => {
     return gulp.src('src/assets/**/*')
         .pipe(gulp.dest('dist'))
