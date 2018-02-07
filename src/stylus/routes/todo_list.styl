@@ -1,10 +1,29 @@
 .todo_list
-    background-color #c3f
+    background-color #f - 10%
     height 100%
     display flex
     justify-content center
+    align-items flex-start
+
+    &__body
+        &__item
+            display flex
+            background-color #efefef
+            height 50px
+            align-items center
+            padding 0 15px
+
+            &:not(:last-child)
+                margin-bottom 10px
+
+            &__title
+                flex-grow 1
 
     &__wrapper
-        background-color #f - 10%
+        background-color #f
         width 800px
+        box-shadow 0 2px 7px 0 rgba(0, 0, 0, .17)
+        margin-top 5%
+        padding 30px
+        border-radius 2px
 

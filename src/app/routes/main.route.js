@@ -51,7 +51,11 @@ class MainRoute extends Component {
                     <ul className="todo_list__body">
                         {todos.map(item => (
                             <li className="todo_list__body__item" key={item.id}>
-                                <input type="checkbox" className="todo_list__body__item__checkbox" />
+                                <div className="checkbox">
+                                    <input id={item.id} type="checkbox" className="checkbox__input" />
+                                    <label htmlFor={item.id} className="checkbox__label"></label>
+                                </div>
+
                                 <span className="todo_list__body__item__title">{item.title}</span>
                                 <i className="material-icons">delete_forever</i>
                             </li>
